@@ -1,5 +1,6 @@
 import { Switch, Route, NavLink } from 'react-router-dom'
 import CharDetail from '../Character/CharDetail'
+import NewChar from '../Character/NewChar'
 
 
 const actLink = { fontWeight: "bold", color: 'blue' }
@@ -17,7 +18,9 @@ export default function Navigation() {
             </div>
             <Switch>
                 <Route path='/' exact>Home Page</Route>
-                <Route path='/newcharacter'>New Character Form</Route>
+                <Route path='/newcharacter'>
+                    <NewChar />
+                </Route>
                 <Route path='/character/:charId'>
                     <CharDetail />
                 </Route>
