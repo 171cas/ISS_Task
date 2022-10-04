@@ -1,0 +1,2 @@
+npx create-react-app react-template --use-npm
+npm install --save react-router-dom@^5.1.2
